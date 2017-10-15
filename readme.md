@@ -16,6 +16,7 @@ I've expanded on this idea to work with sublime, atom, vscode, vim... with a lit
 
 ## config file
 Copy `config.sample.json` into `config.json`
+
 Edit `config.json`
 
 ## start server
