@@ -2,7 +2,7 @@
 
 This idea was inspired by IntelliJ IDEA way of opening files with url
 
-When using IntelliJ, when you visit http://localhost:63342/api/file/?file=<path-to-file>&line=<line-number> that file will be opened in IntelliJ.
+When using IntelliJ, when you visit http://localhost:63342/api/file/?file=path-to-file&line=line-number that file will be opened in IntelliJ.
 Note that file path needs to be absolute.
 
 I've expanded on this idea to work with sublime, atom, vscode, vim... with a little help of nodeJs
