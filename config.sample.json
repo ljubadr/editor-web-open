@@ -1,0 +1,8 @@
+{
+  "editor": "subl",
+  "port": 63342,
+  "pathReplace": {
+    "vm":   "/home/vagrant/Code",
+    "host": "~/Code"
+  }
+}
