@@ -9,7 +9,9 @@ I've expanded on this idea to work with sublime, atom, vscode, vim... with a lit
 
 # Install and setup
 `git clone git@github.com:ljubadr/editor-web-open.git`
+
 `cd editor-web-open`
+
 `npm install`
 
 ## config file
