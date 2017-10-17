@@ -1,8 +1,11 @@
 {
   "editor": "subl",
+  "terminal": "gnome-terminal",
   "port": 63342,
-  "pathReplace": {
-    "vm":   "/home/vagrant/Code",
-    "host": "~/Code"
-  }
+  "pathReplace": [
+    {
+      "vm":   "/home/vagrant/Code",
+      "host": "~/Code"
+    }
+  ]
 }

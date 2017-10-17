@@ -20,8 +20,13 @@ app.get('/api/file', function(req, res) {
   var file = req.query.file;
   var line = ! req.query.line ? 1 : req.query.line;
 
-  if ( typeof pathReplace.vm !== 'undefined' && typeof pathReplace.host !== 'undefined' ) {
-    file = file.replace(pathReplace.vm, pathReplace.host);
+  // We can have multiple mappings, check which one this is
+  if ( pathReplace.length > 0 ) {
+    pathReplace.forEach(function(element) {
+      if ( element.vm && element.host && file.indexOf(element.vm) === 0 ) {
+        file = file.replace(element.vm, element.host);
+      }
+    });
   }
 
   var runCommand = editor+' '+file+':'+line;
